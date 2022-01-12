@@ -19,8 +19,17 @@
  * sumOdds([3, 7, 8, 15, 2, 1, 13]) -> 39
  */
 function sumOdds(numbers) {
-  // Your code here
+  const Numbers= numbers
+  let sum = 0
+    let i=0
+while(i<number.length){
+  if (Numbers[i]%2==1){
+  sum= sum+ Numbers[i];}
+  return sum
+
+  }
 }
+
 // console.log(sumOdds([3, 7, 8, 15, 2, 1, 13]));
 
 /**
@@ -38,7 +47,28 @@ function sumOdds(numbers) {
  */
 function characterCount(string, c) {
   // Your code here
-}
+  const names= [string];
+  if(names. toLowerCase() === string. toLowerCase()){
+    let names1=[]
+    names1=[names]} 
+    else{
+      string.toLowerCase;
+      names1= [string]
+    }
+
+  let i= 0
+let g=0
+  while(i< number.length){
+  if (names1.includes(c)){
+    g++
+  
+  }
+i++}
+return g
+  }
+
+
+
 // console.log(characterCount("Character Count is clever", "c"));
 
 /**
@@ -58,7 +88,18 @@ function characterCount(string, c) {
  * largestIncrement([11, 35, 52, 14, 56, 601, 777, 888, 999]) -> 545
  */
 function largestIncrement(numbers) {
-  // Your code here
+  let i=0
+  let j =0
+  let sum =[]
+  let d=0
+  for (  i=0 ; i< numbers.length;i++){
+    for(j=1; j< numbers.length; j++){
+      d=0
+      d=numbers[i]-numbers[j]
+      sum=[d]
+    }
+  } 
+  console.log()
 }
 // console.log(largestIncrement([11, 35, 52, 14, 56, 601, 777, 888, 999]));
 
@@ -74,6 +115,9 @@ function largestIncrement(numbers) {
  * afterX([11, 35, 52, 14, 56, 601, 777, 888, 999], 52) -> [14, 56, 601, 777, 888, 999]
  */
 function afterX(numbers, x) {
+let Num = [numbers]
+Num.slice(x,-1)
+return Num
   // Your code here
 }
 // console.log(afterX([1, 2, 3, 4, 5, 6, 7, 8, 9], 3));
@@ -90,6 +134,11 @@ function afterX(numbers, x) {
  * Hint: Use string method .toUpperCase()
  */
 function abbreviate(firstName, lastName) {
+  firstName.isUpperCase
+  lastName.isUpperCase
+  consle.log(firstName.charAt(0)+lastName.charAt(0))
+  
+
   // Your code here
 }
 // console.log(abbreviate("miss", "Stephane"));
@@ -105,6 +154,11 @@ function abbreviate(firstName, lastName) {
  *
  */
 function isUpperCase(string) {
+  if( string.isUpperCase()){
+    return true ;
+  }
+  else 
+  return false;
   // Your code here
 }
 
@@ -121,7 +175,12 @@ function isUpperCase(string) {
  *
  */
 function elementInArray(numbers, x) {
-  // Your code here
+let Num= numbers
+if (Num.includes(x)){
+  return true;
+}
+else
+return false;
 }
 // console.log(elementInArray([5, 6, 7], 8));
 
